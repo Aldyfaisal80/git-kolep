@@ -8,7 +8,7 @@ const NavbarLayouts = ({ children }: { children: React.ReactNode }) => {
 
 const NavbarSelect = ({ options, icon }: { options: { value: string, description: string }[], icon: React.ReactNode }) => {
     return (
-        <div className="w-full flex p-2 bg-slate-100 rounded-md">
+        <div className="w-4/5 flex p-2 bg-slate-100 rounded-md">
             <select className="p-2 outline-none">
                 {options.map((option, index) => (
                     <option key={index} value={option.value}>
