@@ -4,71 +4,77 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-dependencies:
-  react:
-    specifier: ^18.3.1
-    version: 18.3.1
-  react-dom:
-    specifier: ^18.3.1
-    version: 18.3.1(react@18.3.1)
-  react-icons:
-    specifier: ^5.2.1
-    version: 5.2.1(react@18.3.1)
-devDependencies:
-  '@tanstack/react-query':
-    specifier: ^5.51.15
-    version: 5.51.15(react@18.3.1)
-  '@types/react':
-    specifier: ^18.3.3
-    version: 18.3.3
-  '@types/react-dom':
-    specifier: ^18.3.0
-    version: 18.3.0
-  '@types/react-router-dom':
-    specifier: ^5.3.3
-    version: 5.3.3
-  '@typescript-eslint/eslint-plugin':
-    specifier: ^7.15.0
-    version: 7.17.0(@typescript-eslint/parser@7.17.0)(eslint@8.57.0)(typescript@5.5.4)
-  '@typescript-eslint/parser':
-    specifier: ^7.15.0
-    version: 7.17.0(eslint@8.57.0)(typescript@5.5.4)
-  '@vitejs/plugin-react':
-    specifier: ^4.3.1
-    version: 4.3.1(vite@5.3.5)
-  autoprefixer:
-    specifier: ^10.4.19
-    version: 10.4.19(postcss@8.4.40)
-  axios:
-    specifier: ^1.7.2
-    version: 1.7.2
-  eslint:
-    specifier: ^8.57.0
-    version: 8.57.0
-  eslint-plugin-react-hooks:
-    specifier: ^4.6.2
-    version: 4.6.2(eslint@8.57.0)
-  eslint-plugin-react-refresh:
-    specifier: ^0.4.7
-    version: 0.4.9(eslint@8.57.0)
-  formik:
-    specifier: ^2.4.6
-    version: 2.4.6(react@18.3.1)
-  postcss:
-    specifier: ^8.4.40
-    version: 8.4.40
-  react-router-dom:
-    specifier: ^6.25.1
-    version: 6.25.1(react-dom@18.3.1)(react@18.3.1)
-  tailwindcss:
-    specifier: ^3.4.7
-    version: 3.4.7
-  typescript:
-    specifier: ^5.2.2
-    version: 5.5.4
-  vite:
-    specifier: ^5.3.4
-    version: 5.3.5
+importers:
+  .:
+    dependencies:
+      react:
+        specifier: ^18.3.1
+        version: 18.3.1
+      react-dom:
+        specifier: ^18.3.1
+        version: 18.3.1(react@18.3.1)
+      react-icon:
+        specifier: ^1.0.0
+        version: 1.0.0(babel-runtime@5.8.38)(react@18.3.1)
+      react-icons:
+        specifier: ^5.2.1
+        version: 5.2.1(react@18.3.1)
+    devDependencies:
+      '@tanstack/react-query':
+        specifier: ^5.51.15
+        version: 5.51.15(react@18.3.1)
+      '@types/react':
+        specifier: ^18.3.3
+        version: 18.3.3
+      '@types/react-dom':
+        specifier: ^18.3.0
+        version: 18.3.0
+      '@types/react-router-dom':
+        specifier: ^5.3.3
+        version: 5.3.3
+      '@typescript-eslint/eslint-plugin':
+        specifier: ^7.15.0
+        version: 7.17.0(@typescript-eslint/parser@7.17.0(eslint@8.57.0)(typescript@5.5.4))(eslint@8.57.0)(typescript@5.5.4)
+      '@typescript-eslint/parser':
+        specifier: ^7.15.0
+        version: 7.17.0(eslint@8.57.0)(typescript@5.5.4)
+      '@vitejs/plugin-react':
+        specifier: ^4.3.1
+        version: 4.3.1(vite@5.3.5)
+      autoprefixer:
+        specifier: ^10.4.19
+        version: 10.4.19(postcss@8.4.40)
+      axios:
+        specifier: ^1.7.2
+        version: 1.7.2
+      eslint:
+        specifier: ^8.57.0
+        version: 8.57.0
+      eslint-plugin-react-hooks:
+        specifier: ^4.6.2
+        version: 4.6.2(eslint@8.57.0)
+      eslint-plugin-react-refresh:
+        specifier: ^0.4.7
+        version: 0.4.9(eslint@8.57.0)
+      formik:
+        specifier: ^2.4.6
+        version: 2.4.6(react@18.3.1)
+      postcss:
+        specifier: ^8.4.40
+        version: 8.4.40
+      react-router-dom:
+        specifier: ^6.25.1
+        version: 6.25.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      tailwindcss:
+        specifier: ^3.4.7
+        version: 3.4.7
+      typescript:
+        specifier: ^5.2.2
+        version: 5.5.4
+      vite:
+        specifier: ^5.3.4
+        version: 5.3.5
+
 packages:
   /@alloc/quick-lru@5.2.0:
     resolution: {integrity: sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==}
@@ -2158,6 +2164,11 @@ packages:
       react: 18.3.1
     dev: false
 
+  react-icons@5.2.1:
+    resolution: {integrity: sha512-zdbW5GstTzXaVKvGSyTaBalt7HSfuK5ovrzlpyiWHAFXndXTdd/1hdDHI4xBM1Mn7YriT6aqESucFl9kEXzrdw==}
+    peerDependencies:
+      react: '*'
+
   react-is@16.13.1:
 
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
@@ -3732,6 +3743,16 @@ snapshots:
       scheduler: 0.23.2
 
   react-fast-compare@2.0.4: {}
+
+
+  react-icon@1.0.0(babel-runtime@5.8.38)(react@18.3.1):
+    dependencies:
+      babel-runtime: 5.8.38
+      react: 18.3.1
+
+  react-icons@5.2.1(react@18.3.1):
+    dependencies:
+      react: 18.3.1
 
   react-is@16.13.1: {}
 
