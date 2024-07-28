@@ -26,7 +26,7 @@ export default function Navbar() {
         </div>
         <div className="flex border-l-2 gap-4 border-solid items-center relative">
           <img src="https://placehold.co/100x100" className="rounded-full ml-6 w-[40px]" alt="" />
-          <select name="" id="">
+          <select name="profile" id="">
             <option className="" value="profile"></option>
           </select>
         </div>
