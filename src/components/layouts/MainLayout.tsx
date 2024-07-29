@@ -8,18 +8,18 @@ type MainLayoutProps = {
 
 export default function MainLayout({ children }: MainLayoutProps) {
     return (
-        <div className='flex w-full p-5'>
-            <div className='w-[30%]'>
+        <div className='flex w-full p-2 min-h-screen max-h-screen overflow-hidden'>
+            <div className=''>
                 <Aside />
             </div>
-            <div className='flex flex-col gap-5 w-[70%]'>
+            <div className='flex flex-col gap-5 w-full'>
                 <div>
                     <Navbar />
                 </div>
                 <div>
                     <Hero />
                 </div>
-                <div>
+                <div className='overflow-y-auto'>
                     {children}
                 </div>
             </div>
